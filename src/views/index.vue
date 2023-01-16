@@ -1,21 +1,20 @@
 <script setup>
-
+import Preview from '@/components/Preview.vue';
 </script>
 
 <template>
-  <el-container>
-    <el-header class="header">
+  <el-container class="container">
       <h1 data-aos="fade-down" data-aos-duration="600" onclick="location.href='https://zmh-program.site/'">Zh-Website</h1>
       <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="800">We are an Open Source Deep Reinforcement Learning training platform</p>
       <el-row :gutter="20" class="operation-row" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
         <el-button type="success">Quick Start</el-button>
         <el-button type="primary" plain>Docs</el-button>
       </el-row>
-    </el-header>
+      <Preview data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
   </el-container>
 </template>
-<style>
-.header {
+<style scoped>
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,7 +23,7 @@
   height: max-content;
 }
 
-.header h1 {
+.container h1 {
   font-size: 42px;
   background: linear-gradient(315deg,#42d392 25%,#647eff);
   -webkit-background-clip: text;
@@ -35,7 +34,7 @@
 .operation-row {
   margin: 20px auto;
 }
-.header p {
+.container p {
   display: flex;
   font-size: 30px;
   font-weight: bold;
@@ -48,10 +47,10 @@
 }
 
 @media (max-width: 768px) {
-  .header h1 {
+  .container h1 {
     font-size: xx-large;
   }
-  .header p {
+  .container p {
     padding: 10px 15px;
     font-size: 20px;
   }
