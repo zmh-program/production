@@ -3,7 +3,7 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <el-container>
+  <el-container class="app-container">
     <el-header data-aos-duration="500" data-aos="fade-down">
       <el-menu mode="horizontal">
         <el-menu-item index="0" class="logo" onclick="location.href='https://zmh-program.site/'"><img src="@/assets/logo.png" alt>&nbsp;<p>Zh-Website</p></el-menu-item>
@@ -25,6 +25,9 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.app-container {
+  position: absolute;
+}
 .logo img {
   width: 36px;
   height: 36px;

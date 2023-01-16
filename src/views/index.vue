@@ -1,5 +1,6 @@
 <script setup>
 import Preview from '@/components/Preview.vue';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -7,8 +8,8 @@ import Preview from '@/components/Preview.vue';
       <h1 data-aos="fade-down" data-aos-duration="600" onclick="location.href='https://zmh-program.site/'">Zh-Website</h1>
       <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="800">We are an Open Source Deep Reinforcement Learning training platform</p>
       <el-row :gutter="20" class="operation-row" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
-        <el-button type="success">Quick Start</el-button>
-        <el-button type="primary" plain>Docs</el-button>
+        <RouterLink to="/start"><el-button type="success" class="el-button--large" plain><el-icon><Flag /></el-icon>&nbsp;Quick Start</el-button></RouterLink>
+        <RouterLink to="/docs"><el-button type="primary" class="el-button--large" plain><el-icon><Memo /></el-icon>&nbsp;Docs</el-button></RouterLink>
       </el-row>
       <Preview data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
   </el-container>
@@ -24,7 +25,8 @@ import Preview from '@/components/Preview.vue';
 }
 
 .container h1 {
-  font-size: 42px;
+  font-size: 46px;
+  font-weight: 600;
   background: linear-gradient(315deg,#42d392 25%,#647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,7 +34,8 @@ import Preview from '@/components/Preview.vue';
 }
 
 .operation-row {
-  margin: 20px auto;
+  margin: 40px auto;
+  gap: min(5.5vw, 28px);
 }
 .container p {
   display: flex;
@@ -53,6 +56,8 @@ import Preview from '@/components/Preview.vue';
   .container p {
     padding: 10px 15px;
     font-size: 20px;
+    font-weight: normal;
+    letter-spacing: -0.01cm;
   }
 }
 </style>
