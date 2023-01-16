@@ -1,85 +1,44 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <el-container>
+    <el-header data-aos-duration="500" data-aos="fade-down">
+      <el-menu mode="horizontal">
+        <el-menu-item index="0" class="logo" onclick="location.href='https://zmh-program.site/'"><img src="@/assets/logo.png" alt>&nbsp;<p>Zh-Website</p></el-menu-item>
+        <div class="flex-grow" />
+        <el-menu-item index="2" onclick="location.href='https://github.com/zmh-program/Zh-Website'"><el-icon><Link /></el-icon> Github</el-menu-item>
+        <el-menu-item index="3" onclick="location.href='https://gitee.com/zmh-program/Zh-Website'"><el-icon><Link /></el-icon> Gitee</el-menu-item>
+        <el-menu-item index="4" onclick="location.href='https://github.com/zmh-program/production'"><el-icon><Memo /></el-icon> Docs</el-menu-item>
+      </el-menu>
+    </el-header>
+    <el-main>
+      <RouterView />
+    </el-main>
+    <el-footer>
+      <a href="https://beian.miit.gov.cn/" class="icp" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+        鲁ICP备2022034318号-1
+      </a>
+    </el-footer>
+  </el-container>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.logo img {
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.logo p {
+  font-size: 20px;
 }
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.flex-grow {
+  flex-grow: 1;
 }
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.icp {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0;
 }
 </style>
