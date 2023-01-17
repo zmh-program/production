@@ -17,7 +17,7 @@ import { RouterView } from 'vue-router'
       <RouterView />
     </el-main>
     <el-footer>
-      <a href="https://beian.miit.gov.cn/" class="icp" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+      <a href="https://beian.miit.gov.cn/" class="icp">
         鲁ICP备2022034318号-1
       </a>
     </el-footer>
@@ -44,5 +44,6 @@ import { RouterView } from 'vue-router'
   justify-content: center;
   margin: 35px auto;
   width: max-content;
+  color: #409EFF;
 }
 </style>
