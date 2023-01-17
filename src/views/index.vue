@@ -22,6 +22,7 @@ import { RouterLink } from 'vue-router';
   align-items: center;
   width: 100%;
   height: max-content;
+  overflow-y: hidden;
 }
 
 .container h1 {
@@ -44,7 +45,6 @@ import { RouterLink } from 'vue-router';
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: monospace;
   padding: 20px 45px;
   text-align: center;
 }

@@ -42,6 +42,7 @@ import { RouterView } from 'vue-router'
 .icp {
   display: flex;
   justify-content: center;
-  margin: 35px 0;
+  margin: 35px auto;
+  width: max-content;
 }
 </style>
