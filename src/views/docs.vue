@@ -1,7 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+const source = ref("# 324")
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<vue-markdown :source="source" />
 </template>
 
 <style scoped>
