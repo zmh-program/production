@@ -1,5 +1,5 @@
 <script setup>
-import Preview from '@/components/Preview.vue';
+import ScreenShot from '@/components/ScreenShot.vue';
 import { RouterLink } from 'vue-router';
 </script>
 
@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router';
         <RouterLink to="/start"><el-button type="success" class="el-button--large" plain><el-icon><Flag /></el-icon>&nbsp;Quick Start</el-button></RouterLink>
         <RouterLink to="/docs"><el-button type="primary" class="el-button--large" plain><el-icon><Memo /></el-icon>&nbsp;Docs</el-button></RouterLink>
       </el-row>
-      <Preview data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
+      <ScreenShot data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
   </el-container>
 </template>
 <style scoped>

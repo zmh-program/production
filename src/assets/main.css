@@ -9,7 +9,6 @@ html, body, #app {
 .el-container, .el-main {
   width: 100%;
   height: max-content;
-  max-height: 100%;
 }
 
 #app {
@@ -30,7 +29,19 @@ a,
   }
 }
 
+.el-carousel__container {
+  height: 20vh;
+}
+
+@media (min-width: 730px) {
+  .el-carousel__container {
+    height: 40vh;
+  }
+}
 @media (min-width: 1024px) {
+  .el-carousel__container {
+    height: 60vh;
+  }
   body {
     display: flex;
     place-items: center;
@@ -43,6 +54,7 @@ a,
   }
 }
 
-body {
+body, .el-carousel__mask {
   background-color: var(--color-background);
 }
+
