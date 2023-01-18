@@ -1,21 +1,14 @@
-<script setup>
-import { RouterView } from 'vue-router'
-</script>
-
 <template>
   <el-container class="app-container">
     <el-header data-aos-duration="500" data-aos="fade-down">
       <el-menu mode="horizontal">
-        <el-menu-item index="0" class="logo" onclick="location.href='https://zmh-program.site/'"><img src="@/assets/logo.png" alt>&nbsp;<p>Zh-Website</p></el-menu-item>
+        <el-menu-item index="0" class="logo" onclick="location.href='https://zmh-program.site/'"><img src="assets/logo.png" alt>&nbsp;<p>Zh-Website</p></el-menu-item>
         <div class="flex-grow" />
         <el-menu-item index="2" onclick="location.href='https://github.com/zmh-program/Zh-Website'"><el-icon><Link /></el-icon> Github</el-menu-item>
         <el-menu-item index="3" onclick="location.href='https://gitee.com/zmh-program/Zh-Website'"><el-icon><Link /></el-icon> Gitee</el-menu-item>
         <el-menu-item index="4" onclick="location.href='https://github.com/zmh-program/production'"><el-icon><Memo /></el-icon> Docs</el-menu-item>
       </el-menu>
     </el-header>
-    <el-main>
-      <RouterView />
-    </el-main>
     <el-footer>
       <a href="https://beian.miit.gov.cn/" class="icp">
         鲁ICP备2022034318号-1

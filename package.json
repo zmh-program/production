@@ -2,7 +2,6 @@
   "name": "production",
   "version": "0.0.0",
   "private": true,
-  "main": "main.js",
   "author": "zmh-program",
   "license": "GPL-3.0",
   "description": "Document of Zh-Website",
@@ -10,33 +9,22 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
     "aos": "^2.3.4",
-    "axios": "^1.2.2",
-    "electron-squirrel-startup": "^1.0.0",
     "element-plus": "^2.2.28",
     "marked": "^4.2.12",
-    "pinia": "^2.0.28",
-    "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.4",
-    "@electron-forge/maker-deb": "^6.0.4",
-    "@electron-forge/maker-rpm": "^6.0.4",
-    "@electron-forge/maker-squirrel": "^6.0.4",
-    "@electron-forge/maker-zip": "^6.0.4",
-    "@electron-forge/publisher-github": "^6.0.4",
     "@vitejs/plugin-vue": "^4.0.0",
-    "electron": "^22.0.2",
     "vite": "^4.0.0",
     "vite-plugin-compression": "^0.5.1",
+    "vitepress": "^1.0.0-alpha.38",
     "vue-loader": "^17.0.1",
     "vue-template-compiler": "^2.7.14"
   }

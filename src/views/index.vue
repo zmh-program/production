@@ -1,17 +1,17 @@
 <script setup>
-import ScreenShot from '@/components/ScreenShot.vue';
+import ScreenShot from '@/../../docs/.vitepress/theme/components/ScreenShot.vue';
 import { RouterLink } from 'vue-router';
 </script>
 
 <template>
   <el-container class="container">
-      <h1 data-aos="fade-down" data-aos-duration="600" onclick="location.href='https://zmh-program.site/'">Zh-Website</h1>
-      <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="800">We are an Open Source Deep Reinforcement Learning training platform</p>
-      <el-row :gutter="20" class="operation-row" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
-        <RouterLink to="/start"><el-button type="success" class="el-button--large" plain><el-icon><Flag /></el-icon>&nbsp;Quick Start</el-button></RouterLink>
-        <RouterLink to="/docs"><el-button type="primary" class="el-button--large" plain><el-icon><Memo /></el-icon>&nbsp;Docs</el-button></RouterLink>
-      </el-row>
-      <ScreenShot data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
+    <h1 data-aos="fade-down" data-aos-duration="600" onclick="location.href='https://zmh-program.site/'">Zh-Website</h1>
+    <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="800">We are an Open Source Deep Reinforcement Learning training platform</p>
+    <el-row :gutter="20" class="operation-row" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
+      <RouterLink to="/start/"><el-button type="success" class="el-button--large" plain><el-icon><Flag /></el-icon>&nbsp;Quick Start</el-button></RouterLink>
+      <RouterLink to="/docs/"><el-button type="primary" class="el-button--large" plain><el-icon><Memo /></el-icon>&nbsp;Docs</el-button></RouterLink>
+    </el-row>
+    <ScreenShot data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" />
   </el-container>
 </template>
 <style scoped>

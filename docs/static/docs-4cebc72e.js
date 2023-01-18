@@ -1,1 +1,0 @@
-import{f as r,r as c,o as s,c as n}from"./index-17186aeb.js";const m={__name:"docs",setup(a){const o=r("# 324");return(t,u)=>{const e=c("vue-markdown");return s(),n(e,{source:o.value},null,8,["source"])}}};export{m as default};

@@ -1,10 +1,10 @@
 <template>
   <el-carousel :interval="4000" type="card" class="carousel">
-    <el-carousel-item><img src="@/assets/screenshot/profile.png" alt></el-carousel-item>
-    <el-carousel-item><img src="@/assets/screenshot/chat.png" alt></el-carousel-item>
-    <el-carousel-item><img src="@/assets/screenshot/index.png" alt></el-carousel-item>
-    <el-carousel-item><img src="@/assets/screenshot/functions.png" alt></el-carousel-item>
-    <el-carousel-item><img src="@/assets/screenshot/production.png" alt></el-carousel-item>
+    <el-carousel-item><img src="../assets/screenshot/profile.png" alt></el-carousel-item>
+    <el-carousel-item><img src="../assets/screenshot/chat.png" alt></el-carousel-item>
+    <el-carousel-item><img src="../assets/screenshot/index.png" alt></el-carousel-item>
+    <el-carousel-item><img src="../assets/screenshot/functions.png" alt></el-carousel-item>
+    <el-carousel-item><img src="../assets/screenshot/production.png" alt></el-carousel-item>
   </el-carousel>
 </template>
 
