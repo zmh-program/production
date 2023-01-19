@@ -1,4 +1,5 @@
 ---
+title: Index
 layout: home
 
 hero:
@@ -10,10 +11,10 @@ hero:
     alt: Zh-Website
   actions:
     - theme: brand
-      text: Get Started
-      link: /quickstart.md
+      text: 👉 Get Started
+      link: /profile
     - theme: alt
-      text: View on GitHub
+      text: 👀 View on GitHub
       link: https://github.com/zmh-program/Zh-Website
 features:
   - icon: ⚡
@@ -30,9 +31,26 @@ features:
     details: 依托于庞大的开源社区，使我们有更多的合作与贡献者， 获得更快的更新与迭代
   - icon: 📋
     title: 更完美的用户体验
-    details: 网站/服务器 全部功能完全且永久免费 (GPL-3.0 Licence)， 前端使用Vue+ElementPlus构建界面，
+    details: 网站/服务器 全部功能完全且永久免费 (GPL-3.0 Licence)， 前端使用Vue+ElementPlus构建界面
   - icon: 🛡
     title: 更安全的连接
     details: TrustAsia - SSL证书， 包括 HTTPS 与 WSS 加密通讯
 
 ---
+
+<VPTeamMembers size="small" :members="members" style="margin: 8vh auto"/>
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme';
+
+const members = [
+  {
+    avatar: 'zmh-program.png',
+    name: 'zmh-program',
+    title: 'Creator',
+    links: [
+      { icon: 'github', link: 'https://github.com/' },
+    ]
+  },
+]
+</script>
