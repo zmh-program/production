@@ -34,8 +34,15 @@ export default {
       {
         text: '内嵌式应用程序',
         items: [
-          { text: '内嵌式App', link: '/apps/'},
+          { text: '应用程序简介', link: '/apps/'},
+          { text: '创建应用程序', link: '/apps/create'},
         ]
+      },
+      {
+        text: '贡献',
+        items : [
+            { text: '做出贡献', link: '/contrib'},
+        ],
       }
     ],
     socialLinks: [

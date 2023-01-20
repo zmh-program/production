@@ -60,4 +60,4 @@ python3 manage.py celery
 ```commandline
 python manage.py buildapp
 ```
-更多**buildapp**相关请参阅下一章节[[内嵌式应用程序](/apps/)]
+更多**buildapp**相关请参阅章节[内嵌式应用程序 - 创建应用程序](/apps/create)
