@@ -2,6 +2,9 @@
 title: 配置
 ---
 # 配置
+[[TOC]]
+---
+
 [View Config on Github Repo](https://github.com/zmh-program/Zh-Website/blob/main/config.json)
 :::tip 配置文件
 配置文件于2.x版本独立，固定于项目根目录的**config.json**文件<br>

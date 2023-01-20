@@ -26,6 +26,15 @@ export default {
           { text: '快速开始', link: '/quickstart/' },
           { text: '拉取代码', link: '/quickstart/code' },
           { text: '配置', link: '/quickstart/config' },
+          { text: '扩展命令', link: '/quickstart/command' },
+          { text: '初始化与运行', link: '/quickstart/run' },
+          { text: '部署', link: '/quickstart/deploy' },
+        ]
+      },
+      {
+        text: '内嵌式应用程序',
+        items: [
+          { text: '内嵌式App', link: '/apps/'},
         ]
       }
     ],
